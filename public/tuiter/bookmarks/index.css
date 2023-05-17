@@ -24,3 +24,14 @@
     background-color: transparent;
     text-decoration: underline;
 }
+
+.wd-anchor-none:link{
+    color: black;
+    text-decoration: none;
+}
+
+
+.wd-anchor-none:visited{
+    color: black;
+    text-decoration: none;
+}
