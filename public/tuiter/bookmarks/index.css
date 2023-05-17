@@ -1,0 +1,26 @@
+.wd-margin-right-20{
+    margin-right: 20px;
+}
+
+.wd-tuit-container{
+    clear: both;
+    padding: 12px;
+}
+
+.wd-anchor:link {
+    color: rgb(29, 161, 242);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.wd-anchor:hover {
+    color: rgb(29, 161, 242);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.wd-anchor:visited {
+    color: rgb(29, 161, 242);
+    background-color: transparent;
+    text-decoration: underline;
+}

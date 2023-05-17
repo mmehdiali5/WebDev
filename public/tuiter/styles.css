@@ -1,0 +1,70 @@
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-done {
+    clear: both;
+}
+
+.color-black{
+    color: black;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.grid-row {
+    clear: both;
+}
+
+.grid-col-half-page {
+    width: 50%;
+    float: left;
+}
+
+.grid-col-third-page {
+    width: 33%;
+    float: left;
+}
+
+.grid-col-two-thirds-page {
+    width: 67%;
+    float: left;
+}
+
+.grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.grid-col-main-content {
+    width: 60%;
+    float: left;
+}
+
+.grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.border-1{
+    border: 1px solid lightgrey;
+}
+
+.wd-horizontalList{
+    list-style-type: none;
+    margin: 25px;
+    margin-left: 40px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wd-horizontalListItem{
+    float: left;
+    width: 20%;
+}

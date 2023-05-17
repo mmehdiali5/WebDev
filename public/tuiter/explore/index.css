@@ -13,18 +13,6 @@
     height: fit-content;
 }
 
-.wd-horizontalList{
-    list-style-type: none;
-    margin: 25px;
-    margin-left: 40px;
-    padding: 0;
-    overflow: hidden;
-}
-
-.wd-horizontalListItem{
-    float: left;
-    width: 20%;
-}
 
 .wd-anchor:link { text-decoration: none; }
 
