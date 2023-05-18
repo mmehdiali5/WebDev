@@ -46,3 +46,8 @@
 .wd-foreground-white{
     color: white;
 }
+
+.wd-logo{
+    width: 48px;
+    height: 48px;
+}
