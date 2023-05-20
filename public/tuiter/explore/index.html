@@ -14,60 +14,79 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-2" style="margin-top: 20px">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2" style="margin-top: 20px">
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-house"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">Home</span>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                    <i class="fa-solid fa-hashtag"></i> Explore
+                    <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline d-xxl-inline">Explore</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bell"></i>
-                    Notifications</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-envelope"></i> Messages</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-bookmark"></i>
-                    Bookmarks</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-list"></i> Lists</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-user"></i> Profile</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-ellipsis"></i> More</a>
-
-                <button type="button" class="btn btn-primary rounded-pill" style="margin-top: 10px">Tuit</button>
+                    <span class="d-none d-xl-inline d-xxl-inline">Notifications</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-envelope"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">Messages</span>
+                </a>
+                <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action"><i
+                        class="fa-solid fa-bookmark"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">Bookmarks</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-list"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">Lists</span>
+                </a>
+                <a href="../profile.html" class="list-group-item list-group-item-action"><i
+                        class="fa-solid fa-user"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">Profile</span></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-ellipsis"></i>
+                    <span class="d-none d-xl-inline d-xxl-inline">More</span></a>
             </div>
+
+            <button type="button" class="btn btn-primary rounded-pill d-xl-block
+            d-block d-sm-block d-md-block d-lg-none" style="margin-top: 10px;width: 100%">
+                Tweet
+            </button>
+
+            <button type="button" class="btn btn-primary rounded-pill d-xl-none d-md-none
+            d-none d-sm-none d-lg-block" style="margin-top: 10px;width: auto">
+                Tweet
+            </button>
 
         </div>
 
-        <div class="col-6" style="margin-top: 20px">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 " style="margin-top: 20px">
 
             <div class="row">
                 <div class="col-11">
-                    <div class="wd-containerBox">
+                    <div class="wd-containerBox" style="background-color: white;border: 1px solid darkgray" >
                         <i class="fas fa-search" style="color: rgb(208, 208, 226);
                 margin-top:2px;margin-bottom:2px;margin-right:4px;margin-left:4px"></i>
-                        <input class="wd-search-bar wd-no-focusborder" placeholder="Search Tuiter"/>
+                        <input class="wd-search-bar wd-no-focusborder" style="background-color: white" placeholder="Search Tuiter"/>
                     </div>
                 </div>
                 <div class="col-1" style="position: relative">
                     <i class="fa-solid fa-gear fa-2x"
-                       style="position: absolute;right:10px;color: rgb(29, 161, 242)"></i>
+                       style="position: absolute;right:10px;top: 4px;color: rgb(29, 161, 242)"></i>
                 </div>
             </div>
 
             <ul class="nav nav-tabs" style="margin-top: 20px;margin-bottom: 20px">
-                <li class="nav-item" style="width: 16%">
-                    <a class="nav-link active" aria-current="page" href="#"><b style="color: darkgray">For You</b></a>
+                <li class="nav-item" style="text-align: center">
+                    <a class="nav-link active" aria-current="page" href="for-you.html"><b style="color: darkgray">For
+                        You</b></a>
                 </li>
-                <li class="nav-item" style="width: 16%">
-                    <a class="nav-link" href="#"><b style="color: rgb(29, 161, 242)">Trending</b></a>
+                <li class="nav-item" style="text-align: center">
+                    <a class="nav-link" href="trending .html"><b style="color: rgb(29, 161, 242)">Trending</b></a>
                 </li>
-                <li class="nav-item" style="width: 16%">
-                    <a class="nav-link" href="#"><b style="color: rgb(29, 161, 242)">News</b></a>
+                <li class="nav-item" style="text-align: center">
+                    <a class="nav-link" href="news.html"><b style="color: rgb(29, 161, 242)">News</b></a>
                 </li>
-                <li class="nav-item" style="width: 16%">
-                    <a class="nav-link"><b style="color: rgb(29, 161, 242)">Sports</b></a>
+                <li class="nav-item" style="text-align: center">
+                    <a class="nav-link" href="sports.html"><b style="color: rgb(29, 161, 242)">Sports</b></a>
                 </li>
-                <li class="nav-item" style="width: 16%">
-                    <a class="nav-link"><b style="color: rgb(29, 161, 242)">Entertainment</b></a>
+                <li class="nav-item" style="text-align: center">
+                    <a class="nav-link d-none d-sm-none d-xxl-block d-xl-block d-md-block"
+                       href="entertainment.html"><b style="color: rgb(29, 161, 242)">Entertainment</b></a>
                 </li>
-
             </ul>
 
             <div style="width: 100%">
@@ -95,154 +114,154 @@
 
             </div>
 
-            <div class="row wd-border" style="margin: auto;padding-top: 10px"
-            ">
-            <div class="col-10">
-                <b>JavaScript</b> <i class="fa-sharp fa-solid fa-circle-check"></i> <b style="color: darkgray">- 2h</b>
-                <p>
-                    <b>JavaScript is programming language that can run on browsers as well as desktop</b>
+            <div class="row wd-border" style="margin: auto;padding-top: 10px">
+                <div class="col-10">
+                    <b>JavaScript</b> <i class="fa-sharp fa-solid fa-circle-check"></i> <b style="color: darkgray">-
+                    2h</b>
+                    <p>
+                        <b>JavaScript is programming language that can run on browsers as well as desktop</b>
+                        <br>
+                        <b style="color: darkgray">123K Tuits</b>
+                </div>
+
+                <div class="col-2" style="margin-top: 10px">
+                    <img src="JavaScript.png" style="width: 100%;border-radius: 10px"/>
+                </div>
+
+            </div>
+
+            <div class="row wd-border" style="margin: auto;padding-top: 10px">
+                <div class="col-10">
+                    <b style="color: darkgray">Web Development</b>
+                    <br>
+                    <b>jQuery</b>
+                    <p style="margin-top: 0"><b style="color: darkgray">123K Tuits</b></p>
+                </div>
+
+                <div class="col-2" style="margin-top: 10px">
+                    <img src="jquery.png" style="width: 100%;border-radius: 10px"/>
+                </div>
+
+            </div>
+
+            <div class="row wd-border" style="margin: auto;padding-top: 10px">
+                <div class="col-10">
+                    <b style="color: darkgray">Web Development</b>
+                    <br>
+                    <b>NodeJS</b> <i class="fa-sharp fa-solid fa-circle-check"></i> <b style="color: darkgray">- 2h</b>
                     <br>
                     <b style="color: darkgray">123K Tuits</b>
-            </div>
+                </div>
 
-            <div class="col-2" style="margin-top: 10px">
-                <img src="JavaScript.png" style="width: 100%;border-radius: 10px"/>
+                <div class="col-2" style="margin-top: 10px">
+                    <img src="node.png" style="width: 100%;border-radius: 10px"/>
+                </div>
             </div>
-
+            <br>
         </div>
 
-        <div class="row wd-border" style="margin: auto;padding-top: 10px">
-            <div class="col-10">
-                <b style="color: darkgray">Web Development</b>
-                <br>
-                <b>JQuery</b>
-                <p style="margin-top: 0"><b style="color: darkgray">123K Tuits</b></p>
-            </div>
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block" style="margin-top: 20px">
+            <ul class="list-group">
+                <li class="list-group-item"><b>Who to follow</b></li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="java.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
+                        </div>
 
-            <div class="col-2" style="margin-top: 10px">
-                <img src="jquery.png" style="width: 100%;border-radius: 10px"/>
-            </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <b>Java <i class="fa-sharp fa-solid fa-circle-check"></i></b>
+                            <br>
+                            <b style="color: darkgray">@Java</b>
+                        </div>
 
+                        <div class="col-xl-3 col-lg-3" style="padding-left: 0">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="rs.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7">
+                            <b>Relativity Space <i class="fa-sharp fa-solid fa-circle-check"></i></b>
+                            <br>
+                            <b style="color: darkgray">@relativityspace</b>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3" style="padding-left: 0">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="vir.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7">
+                            <b>Virgin Galactic <i class="fa-sharp fa-solid fa-circle-check"></i></b>
+                            <br>
+                            <b style="color: darkgray">@virgingalactic</b>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3" style="padding-left: 0">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="nasa.jpeg" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7">
+                            <b>NASA <i class="fa-sharp fa-solid fa-circle-check"></i></b>
+                            <br>
+                            <b style="color: darkgray">@NASA</b>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3" style="padding-left: 0">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="tesla.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7">
+                            <b>Tesla <i class="fa-sharp fa-solid fa-circle-check"></i></b>
+                            <br>
+                            <b style="color: darkgray">@tesla</b>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3" style="padding-left: 0">
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
-
-        <div class="row wd-border" style="margin: auto;padding-top: 10px">
-            <div class="col-10">
-                <b style="color: darkgray">Web Development</b>
-                <br>
-                <b>NodeJS</b> <i class="fa-sharp fa-solid fa-circle-check"></i> <b style="color: darkgray">- 2h</b>
-                <br>
-                <b style="color: darkgray">123K Tuits</b>
-            </div>
-
-            <div class="col-2" style="margin-top: 10px">
-                <img src="node.png" style="width: 100%;border-radius: 10px"/>
-            </div>
-        </div>
-        <br>
     </div>
-
-    <div class="col-4" style="margin-top: 20px">
-        <ul class="list-group">
-            <li class="list-group-item"><b>Who to follow</b></li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="java.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
-                    </div>
-
-                    <div class="col-7">
-                        <b>Java <i class="fa-sharp fa-solid fa-circle-check"></i></b>
-                        <br>
-                        <b style="color: darkgray">@Java</b>
-                    </div>
-
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                    </div>
-
-                </div>
-            </li>
-
-            <li class="list-group-item">
-
-                <div class="row">
-                    <div class="col-2">
-                        <img src="rs.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
-                    </div>
-
-                    <div class="col-7">
-                        <b>Relativity Space <i class="fa-sharp fa-solid fa-circle-check"></i></b>
-                        <br>
-                        <b style="color: darkgray">@relativityspace</b>
-                    </div>
-
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                    </div>
-
-                </div>
-
-            </li>
-            <li class="list-group-item">
-
-                <div class="row">
-                    <div class="col-2">
-                        <img src="vir.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
-                    </div>
-
-                    <div class="col-7">
-                        <b>Virgin Galactic <i class="fa-sharp fa-solid fa-circle-check"></i></b>
-                        <br>
-                        <b style="color: darkgray">@virgingalactic</b>
-                    </div>
-
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                    </div>
-
-                </div>
-
-            </li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="nasa.jpeg" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
-                    </div>
-
-                    <div class="col-7">
-                        <b>NASA <i class="fa-sharp fa-solid fa-circle-check"></i></b>
-                        <br>
-                        <b style="color: darkgray">@NASA</b>
-                    </div>
-
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                    </div>
-                </div>
-            </li>
-
-
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="tesla.png" alt="java" style="width: 48px;height: 48px" class="rounded-circle">
-                    </div>
-
-                    <div class="col-7">
-                        <b>Tesla <i class="fa-sharp fa-solid fa-circle-check"></i></b>
-                        <br>
-                        <b style="color: darkgray">@tesla</b>
-                    </div>
-
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-</div>
 </div>
 </body>
 </html>
