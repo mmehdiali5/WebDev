@@ -3,6 +3,7 @@ import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-fro
 import ForLoops from "./for-loops";
 import MapFunction from "./map-function";
 import FindFunction from "./find-function";
+import FilterFunction from "./filter-function";
 
 function WorkingWithArrays(){
     let numberArray1 = [1, 2, 3, 4, 5];
@@ -23,6 +24,7 @@ function WorkingWithArrays(){
             <ForLoops/>
             <MapFunction/>
             <FindFunction/>
+            <FilterFunction/>
         </div>
     )
 }
