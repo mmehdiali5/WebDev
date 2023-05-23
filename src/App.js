@@ -13,7 +13,6 @@ function App() {
                 <Routes>
                     <Route path="/"
                     element={<Navigate to="/labs/"/>}/>
-
                     <Route path="/labs/*"
                            element={<Labs/>}/>
                     <Route path="/hello"
