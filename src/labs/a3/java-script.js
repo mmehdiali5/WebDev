@@ -6,6 +6,10 @@ import TernaryOperator from "./ternary-operator";
 import WorkingWithFunctions from "./working-with-functions";
 import WorkingWithArrays from "./working-with-arrays";
 import TemplateLiterals from "./templateLiterals";
+import House from "./House";
+import Spread from "./spread";
+import Destructing from "./destructing";
+import FunctionDestructing from "./function-destructing";
 
 function JavaScript() {
     console.log("Hello World!")
@@ -20,6 +24,10 @@ function JavaScript() {
             <WorkingWithFunctions/>
             <WorkingWithArrays/>
             <TemplateLiterals/>
+            <House/>
+            <Spread/>
+            <Destructing/>
+            <FunctionDestructing/>
         </div>
     );
 }
