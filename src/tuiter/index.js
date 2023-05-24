@@ -17,7 +17,7 @@ function Tuiter() {
                 <div className={"col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2"}>
                     <NavigationSidebar/>
                 </div>
-                <div className={"col-10 col-sm-10 col-md-10 col-lg-7 col-xl-7" }>
+                <div className={"col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6" }>
                     <Routes>
                         <Route path={"/home"} element={<HomeScreen/>}/>
                         <Route path={"/explore"} element={<ExploreScreen/>}/>
@@ -29,12 +29,10 @@ function Tuiter() {
                         <Route path={"/more"} element={<h1>More</h1>}/>
                     </Routes>
                 </div>
-                <div className={"col-lg-3 d-none d-sm-none d-md-none d-lg-block"}>
+                <div className={"col-lg-5 col-xl-4 d-none d-sm-none d-md-none d-lg-block"}>
                     <WhoToFollowList/>
                 </div>
             </div>
-
-
         </div>
     );
 }
