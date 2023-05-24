@@ -7,8 +7,6 @@ import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import "./index.css"
-import { AiOutlineSearch } from "react-icons/ai";
-import { GoGear } from "react-icons/go";
 
 function Tuiter() {
     return(
