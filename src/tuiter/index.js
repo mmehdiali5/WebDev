@@ -5,7 +5,10 @@ import HomeScreen from "./home-screen";
 import ExploreScreen from "./explore-screen";
 import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./profile-screen";
-
+import WhoToFollowList from "./who-to-follow-list";
+import "./index.css"
+import { AiOutlineSearch } from "react-icons/ai";
+import { GoGear } from "react-icons/go";
 
 function Tuiter() {
     return(
@@ -13,10 +16,10 @@ function Tuiter() {
             <Nav/>
             {/*<h1>Tuiter</h1>*/}
             <div className="row">
-                <div className={"col-2"}>
+                <div className={"col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2"}>
                     <NavigationSidebar/>
                 </div>
-                <div className={"col-7"}>
+                <div className={"col-10 col-sm-10 col-md-10 col-lg-7 col-xl-7" }>
                     <Routes>
                         <Route path={"/home"} element={<HomeScreen/>}/>
                         <Route path={"/explore"} element={<ExploreScreen/>}/>
@@ -28,8 +31,8 @@ function Tuiter() {
                         <Route path={"/more"} element={<h1>More</h1>}/>
                     </Routes>
                 </div>
-                <div className="col-3">
-                    <h1>Who to follow</h1>
+                <div className={"col-lg-3 d-none d-sm-none d-md-none d-lg-block"}>
+                    <WhoToFollowList/>
                 </div>
             </div>
 
