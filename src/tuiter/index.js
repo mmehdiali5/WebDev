@@ -1,6 +1,11 @@
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import {Route, Routes} from "react-router";
+import HomeScreen from "./home-screen";
+import ExploreScreen from "./explore-screen";
+import BookmarksScreen from "./bookmarks-screen";
+import ProfileScreen from "./profile-screen";
+
 
 function Tuiter() {
     return(
@@ -13,13 +18,13 @@ function Tuiter() {
                 </div>
                 <div className={"col-7"}>
                     <Routes>
-                        <Route path={"/home"} element={<h1>HOME</h1>}/>
-                        <Route path={"/explore"} element={<h1>EXPLORE</h1>}/>
+                        <Route path={"/home"} element={<HomeScreen/>}/>
+                        <Route path={"/explore"} element={<ExploreScreen/>}/>
                         <Route path={"/notifications"} element={<h1>Notifications</h1>}/>
                         <Route path={"/messages"} element={<h1>Messages</h1>}/>
-                        <Route path={"/bookmarks"} element={<h1>Bookmarks</h1>}/>
+                        <Route path={"/bookmarks"} element={<BookmarksScreen/>}/>
                         <Route path={"/lists"} element={<h1>Lists</h1>}/>
-                        <Route path={"/profile"} element={<h1>Profile</h1>}/>
+                        <Route path={"/profile"} element={<ProfileScreen/>}/>
                         <Route path={"/more"} element={<h1>More</h1>}/>
                     </Routes>
                 </div>
