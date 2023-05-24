@@ -1,4 +1,5 @@
 import React from "react";
+import {AiFillCheckCircle} from "react-icons/ai";
 
 const WhoToFollowListItem = ({
                                  who = {userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png'}
@@ -13,7 +14,7 @@ const WhoToFollowListItem = ({
                             className="rounded-circle"/>
                     </div>
                     <div className="col-xl-7 col-lg-7">
-                        <b>{who.userName}</b>
+                        <b>{who.userName}</b> <AiFillCheckCircle style={{"color":"#00acee"}}/>
                         <br/>
                             <b style={{"color": "darkgray"}}>@{who.handle}</b>
                     </div>
