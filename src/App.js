@@ -20,8 +20,6 @@ function App() {
                     <Route path="/tuiter/*"
                            element={<Tuiter/>}/>
                 </Routes>
-
-
             </div>
 
         </BrowserRouter>
