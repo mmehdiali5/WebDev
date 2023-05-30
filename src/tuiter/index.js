@@ -10,7 +10,8 @@ import "./index.css"
 import whoReducer from './reducers/who-reducer'
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
-const store = configureStore({reducer:{who:whoReducer}})
+import tuitsReducer from "./reducers/tuits-reducer";
+const store = configureStore({reducer:{who:whoReducer,tuits:tuitsReducer}})
 
 
 function Tuiter() {
