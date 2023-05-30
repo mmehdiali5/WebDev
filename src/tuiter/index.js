@@ -7,10 +7,15 @@ import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import "./index.css"
+import whoReducer from './reducers/who-reducer'
+import {configureStore} from "@reduxjs/toolkit";
+import {Provider} from "react-redux";
+const store = configureStore({reducer:{who:whoReducer}})
+
 
 function Tuiter() {
     return(
-        <div>
+        <Provider store={store}>
             <Nav/>
             {/*<h1>Tuiter</h1>*/}
             <div className="row">
@@ -33,7 +38,7 @@ function Tuiter() {
                     <WhoToFollowList/>
                 </div>
             </div>
-        </div>
+        </Provider>
     );
 }
 export default Tuiter
