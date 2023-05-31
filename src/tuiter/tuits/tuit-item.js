@@ -1,6 +1,9 @@
 import React from "react";
 import TuitStatistics from "./tuit-statistics";
 import {BsFillPatchCheckFill} from "react-icons/bs";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from './tuits-reducer'
+
 
 const TuitItem = ({
                       tuit = {
@@ -15,6 +18,12 @@ const TuitItem = ({
                           "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
                       }
                   }) => {
+    const dispatch = useDispatch();
+
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return (
         <li className="list-group-item">
             <div className="row">
@@ -23,9 +32,12 @@ const TuitItem = ({
                          className="rounded-circle"/>
                 </div>
                 <div className="col-10 col-xxl-11">
+                    <button type="button" className="btn-close float-end" aria-label="Close"
+                            onClick={() => deleteTuitHandler(tuit._id)}/>
                     <div>
                         <b>{tuit.userName} <BsFillPatchCheckFill
-                            style={{"color": "#00acee"}}/></b> <b style={{color:"darkgray"}}>{tuit.handle} . {tuit.time}</b>
+                            style={{"color": "#00acee"}}/></b> <b
+                        style={{color: "darkgray"}}>{tuit.handle} . {tuit.time}</b>
                     </div>
 
                     <div className={"mb-1"}>{tuit.tuit}</div>

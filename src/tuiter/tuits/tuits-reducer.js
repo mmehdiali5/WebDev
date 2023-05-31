@@ -28,10 +28,17 @@ const tuitsSlice = createSlice({
                 ...templateTuit,
                 _id: (new Date()).getTime(),
             })
-        }
+        },
+        deleteTuit(state, action) {
+            const index = state.tuits
+                .findIndex(tuit =>
+                    tuit._id === action.payload);
+            state.tuits.splice(index, 1);
+        },
+
     }
 
 });
 
-export const {createTuit} = tuitsSlice.actions;
+export const {createTuit,deleteTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
