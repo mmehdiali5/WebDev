@@ -1,7 +1,7 @@
 import React from "react";
 import TuitSummaryItem
     from "./tuit-summary-item";
-//import tuitsArray from './tuits.json';
+//import tuitsArray from './tuits-home.json';
 import {useSelector} from "react-redux";
 
 const TuitSummaryList = () => {
