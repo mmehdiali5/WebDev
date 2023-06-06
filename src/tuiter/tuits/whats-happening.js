@@ -24,6 +24,7 @@ const WhatsHappening = () => {
             handle:"@nasa"
         }
         dispatch(createTuitThunk(newTuit));
+        setWhatsHappening("");
     }
 
 
