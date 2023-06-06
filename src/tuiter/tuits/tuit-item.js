@@ -2,8 +2,8 @@ import React from "react";
 import TuitStatistics from "./tuit-statistics";
 import {BsFillPatchCheckFill} from "react-icons/bs";
 import {useDispatch} from "react-redux";
-import {deleteTuitThunk} from "../services/tuits-thunks";
 //import {deleteTuit} from './tuits-reducer'
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
 
 const TuitItem = ({
@@ -22,12 +22,11 @@ const TuitItem = ({
     const dispatch = useDispatch();
 
     const deleteTuitHandler = (id) => {
-        //dispatch(deleteTuit(id));
         dispatch(deleteTuitThunk(id));
     }
 
     return (
-        <li className="list-group-item">
+        <li key={tuit._id} className="list-group-item">
             <div className="row">
                 <div className={"col-2 col-xxl-1"}>
                     <img src={require(`../../images/${tuit.image}`)} height={48} width={48}
