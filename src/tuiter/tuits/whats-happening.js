@@ -16,7 +16,12 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            tuit: whatsHappening,
+            image:"nasa.png",
+            title:"NASA",
+            topic:"Space",
+            username:"NASA",
+            handle:"@nasa"
         }
         dispatch(createTuitThunk(newTuit));
     }

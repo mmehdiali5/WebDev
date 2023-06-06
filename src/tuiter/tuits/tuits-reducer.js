@@ -39,7 +39,6 @@ const tuitsSlice = createSlice({
             },
         [findTuitsThunk.rejected]:
             (state, action) => {
-            console.log("Inside Rejected")
                 state.loading = false
                 state.error = action.error
             },
