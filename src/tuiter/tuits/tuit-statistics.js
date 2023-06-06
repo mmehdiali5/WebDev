@@ -6,6 +6,9 @@ import {AiOutlineHeart} from "react-icons/ai";
 import {AiOutlineUpload} from "react-icons/ai";
 import {updateTuitThunk} from "../services/tuits-thunks";
 import {useDispatch} from "react-redux";
+import {BsFillHandThumbsDownFill} from "react-icons/bs";
+import {FaRegThumbsDown} from "react-icons/fa";
+
 
 const TuitStatistics = ({
                             tuit = {
@@ -24,9 +27,9 @@ const TuitStatistics = ({
 
     return (
         <div className={"row"}>
-            <div className={"col-3"}><BiMessageRounded/> {tuit.replies}</div>
-            <div className={"col-3"}><AiOutlineRetweet/> {tuit.retuits}</div>
-            <div className={"col-3"}>
+            <div className={"col-2"}><BiMessageRounded/> {tuit.replies}</div>
+            <div className={"col-2"}><AiOutlineRetweet/> {tuit.retuits}</div>
+            <div className={"col-2"}>
                 {tuit.liked && <AiTwotoneHeart onClick={() =>
                     dispatch(updateTuitThunk({...tuit, likes: tuit.likes - 1, liked: !tuit.liked}))
                 }
@@ -35,7 +38,20 @@ const TuitStatistics = ({
                     dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1, liked: !tuit.liked}))
                 } style={{"color": "red"}}/>} {tuit.likes}
             </div>
-            <div className={"col-3"}>
+
+            <div className={"col-2"}>
+                {tuit.disliked && <BsFillHandThumbsDownFill onClick={() =>
+                    dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes - 1, disliked: !tuit.disliked}))
+                }
+                                               style={{"color": "red"}}/>}
+                {!tuit.disliked && <FaRegThumbsDown onClick={() =>
+                    dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes + 1, disliked: !tuit.disliked}))
+                } style={{"color": "red"}}/>} {tuit.dislikes}
+            </div>
+
+
+
+            <div className={"col-2"}>
                 <AiOutlineUpload></AiOutlineUpload>
             </div>
 
