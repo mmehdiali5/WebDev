@@ -2,7 +2,8 @@ import React from "react";
 import TuitStatistics from "./tuit-statistics";
 import {BsFillPatchCheckFill} from "react-icons/bs";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from './tuits-reducer'
+import {deleteTuitThunk} from "../services/tuits-thunks";
+//import {deleteTuit} from './tuits-reducer'
 
 
 const TuitItem = ({
@@ -21,7 +22,8 @@ const TuitItem = ({
     const dispatch = useDispatch();
 
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        //dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
