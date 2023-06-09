@@ -30,10 +30,10 @@ function ProfileScreen() {
     return (
         <div>
             <h1>Profile Screen</h1>
-            {profile && (<div>
+            {profile && (<div className={"mb-3"}>
                     <div>
-                        <label>First Name</label>
-                        <input type="text" value={profile.firstName}
+                        <label for="firstname" className="form-label">First Name</label>
+                        <input type="text"  className="form-control" id="firstname" value={profile.firstName}
                                onChange={(event) => {
                                    const newProfile = {
                                        ...profile, firstName: event.target.value,
@@ -42,8 +42,8 @@ function ProfileScreen() {
                                }}/>
                     </div>
                     <div>
-                        <label>Last Name</label>
-                        <input type="text" value={profile.lastName}
+                        <label for="lastname" className="form-label">Last Name</label>
+                        <input className="form-control" id="lastname" type="text" value={profile.lastName}
                                onChange={(event) => {
                                    const newProfile = {
                                        ...profile, lastName: event.target.value,
@@ -53,13 +53,13 @@ function ProfileScreen() {
                     </div>
                 </div>
             )}
-            <button
+            <button className={"btn btn-danger"}
                 onClick={() => {
                     dispatch(logoutThunk());
                     navigate("/tuiter/login");
                 }}> Logout
             </button>
-            <button onClick={save}>Save</button>
+            <button className={"btn btn-primary"} onClick={save}>Save</button>
         </div>
     );
 }

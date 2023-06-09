@@ -6,8 +6,9 @@ import {MdExplore} from "react-icons/md";
 import {FaEnvelope} from "react-icons/fa";
 import {ImBookmarks} from "react-icons/im";
 import {CgProfile} from "react-icons/cg";
-import {BsThreeDots} from "react-icons/bs";
+import {BsFillKeyFill, BsThreeDots} from "react-icons/bs";
 import {useSelector} from "react-redux";
+import {GiArchiveRegister} from "react-icons/gi";
 
 
 const NavigationSidebar = () => {
@@ -50,11 +51,13 @@ const NavigationSidebar = () => {
                 <BsThreeDots/> <span className={"d-none d-xl-inline"}>More</span></Link>
 
             {!currentUser && <Link className={`list-group-item ${active === 'login' ? "active" : ""}`}
-                                   to="/tuiter/login"> <span className={"d-none d-xl-inline"}>Login</span>
+                                   to="/tuiter/login"> <BsFillKeyFill/> <span className={"d-none d-xl-inline"}>
+                Login</span>
             </Link>}
 
             {!currentUser && <Link className={`list-group-item ${active === 'register' ? "active" : ""}`}
-                                   to="/tuiter/register"> <span className={"d-none d-xl-inline"}>Register</span>
+                                   to="/tuiter/register"><GiArchiveRegister/> <span
+                className={"d-none d-xl-inline"}>Register</span>
             </Link>}
         </div>
 
